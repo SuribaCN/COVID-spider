@@ -8,7 +8,7 @@ import re
 url = "https://buff.163.com/market/?game=csgo#tab=selling&page_num=1"
 payload={}
 headers = {
-  'Cookie': 'Device-Id=G7QOBXlyu7DYMmqsgDF3; client_id=cQMlx1SvDIurPgcIeVXkwA; csrf_token=IjJmMzIwYTU3OTFlYzMxMWFkYjBiMmYwMThjODM5M2ZlZWU3YjQ4NDYi.Eq-8ig.9qRbqa-l2_36UluqMtsMjEbWJpU'
+  'Cookie': 'Device-Id=G7QOBXlyu7DYMmqsgsF3; client_id=cQMlx1SvDIurPgcIeVXkwA; csrf_token=IjJmMzIwYTU3OTFlYzMxMWFkYjBiMmYwMThjODM5M2ZlZWU3YjQ4NDYi.Eq-8ig.9qRbqa-l2_36UluqMtsMjEbWJpU'
 }
 buffLink = requests.get (url, headers=headers, data=payload)
 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'COVID_Spider.ui'
+# Form implementation generated from reading ui file 'COVID_Spider_Layout.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.2
 #
@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from COVID_spider import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -50,6 +50,8 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.listWidget.clicked.connect(lambda: slot(self))
+        self.pushButton.clicked.connect(creatManage)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
